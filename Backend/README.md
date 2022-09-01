@@ -1,7 +1,7 @@
-### Ejecutar Proyecto
+### Execute Project
 
-1. Crear/Activar un entorno virtual de desarrollo con Python
-2. Instalar dependencias
+1. Create/Activate a virtual development environment with Python
+2. Install dependencies
 
 ```bash
 cd Backend\requirements
@@ -19,45 +19,45 @@ Windows:
 pip install -r windows_reqs.txt
 ```
 
-3. Base de datos:
+3. Database:
 
-Postgresql: Abrir SQL Shell de postgresql y crear una nueva base de datos
+Postgresql: Open SQL Shell from postgresql and create a new database
 
 ```bash
-CREATE DATABASE db_nombre;
+CREATE DATABASE db_name;
 CREATE USER db_user;
 \c
-ALTER USER db_user WITH PASSWORD 'db_pass';
+ALTER USER db_user WITH PASSWORD 'db_password';
 ```
 
-4. Cambiar el archivo sensitive_data.json
+4. Change the file sensitive_data.json
 
 ```
-"NAME": "db_nombre"
+"NAME": "db_name"
 "USER": "db_user"
-"PASSWORD": "db_pass"
+"PASSWORD": "db_password"
 ```
 
-en este mismo archivo editar la conección SMTP del correo, teniendo en cuenta que el SSL y el TLS no pueden estar en True al mismo tiempo, el puerto por defecto en muchos servidores para smtp ssl es 465 y para smtp tls es 587.
+In this same file, edit the SMTP mail connection, taking into account that SSL and TLS cannot be True at the same time, the default port on many servers for smtp ssl is 465 and for smtp tls it is 587.
 
 ```
 "EMAIL_USE_SSL": "True",
 "EMAIL_USE_TLS": "False",
 "EMAIL_BACKEND": "django_smtp_ssl.SSLEmailBackend",
-"EMAIL_HOST": "",
+"EMAIL_HOST": "example@domain.com",
 "EMAIL_PORT": 465,
-"EMAIL_HOST_USER": "",
-"EMAIL_HOST_PASSWORD": ""
+"EMAIL_HOST_USER": "example@domain.com",
+"EMAIL_HOST_PASSWORD": "example_password",
 ```
 
-5. Migrar y añadir datos a la base de datos
+5. Migrate and add data to the database
 
 ```bash
 python manage.py migrate
 python manage.py loaddata initial_data.json
 ```
 
-6. Ejecutar el proyecto
+6. Run the project
 
 ```bash
 cd Backend
