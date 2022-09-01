@@ -107,8 +107,6 @@ THIRD_PARTY_APPS = (
 # Local Apps
 LOCAL_APPS = (
     'apps.dynamicform',
-    'apps.suscription',
-    'apps.contactinfo'
 )
 
 # Join all apps

@@ -1,7 +1,5 @@
 from django.utils import timezone
 
-from apps.contactinfo.models import ContactInfoModel
-
 from django.db import models
 
 
@@ -348,12 +346,6 @@ class TVWallMountInstallationModel(models.Model):
         (GET_DOWN_TV_YES, 'Yes'),
         (GET_DOWN_TV_NO, 'No'),
     ]
-
-    user_info = models.OneToOneField(
-        ContactInfoModel,
-        help_text="User info",
-        on_delete=models.DO_NOTHING,
-    )
     
     helpTechnician = models.CharField(
         choices=give_help_choices,

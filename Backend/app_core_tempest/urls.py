@@ -21,6 +21,4 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path('api/dynamicform/', include('apps.dynamicform.api.routers')),
-    re_path('api/suscription/', include('apps.suscription.api.routers')),
-    re_path('api/contactinfo/', include('apps.contactinfo.api.routers')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
