@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { BookingPage } from '../site/booking/BookingPage';
-import { Error404Page } from '../site/errors/Error404Page';
+import { Error404Page } from '../site/helpers/errors/Error404Page';
 
 export const CameinhandymanPrivateRoutes = () => {
   return (

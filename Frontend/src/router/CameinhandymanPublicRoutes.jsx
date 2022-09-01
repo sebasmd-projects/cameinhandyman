@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { AuthRoutes } from '../site/auth/AuthRoutes';
 import { DashboardPage } from '../site/dashboard/DashboardPage';
-import { Error404Page } from '../site/errors/Error404Page';
+import { Error404Page } from '../site/helpers/errors/Error404Page';
 import { FAQPage } from '../site/faq/FAQPage';
 import { ServicesPage } from '../site/services/ServicesPage';
 

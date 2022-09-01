@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { Error404Page } from '../site/errors/Error404Page';
+import { Error404Page } from '../site/helpers/errors/Error404Page';
 import { CameinhandymanPrivateRoutes } from './CameinhandymanPrivateRoutes';
 import { CaminhandymanPublicRoutes } from './CameinhandymanPublicRoutes';
 
