@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,django,node,react,reactnative
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django,node,react,reactnative
 
+### Archivos de configuración ###
+sensitive_data.json
+
 ### Django ###
 *.log
 *.pot
