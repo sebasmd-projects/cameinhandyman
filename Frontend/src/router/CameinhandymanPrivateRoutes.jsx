@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { BookingPage } from '../site/booking/BookingPage';
+import { BookingPage } from '../site/pages/booking/BookingPage';
 import { Error404Page } from '../site/helpers/errors/Error404Page';
 
 export const CameinhandymanPrivateRoutes = () => {

@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import { AuthRoutes } from '../site/auth/AuthRoutes';
-import { DashboardPage } from '../site/dashboard/DashboardPage';
+import { AuthRoutes } from '../site/pages/auth/AuthRoutes';
+import { DashboardPage } from '../site/pages/dashboard/DashboardPage';
 import { Error404Page } from '../site/helpers/errors/Error404Page';
-import { FAQPage } from '../site/faq/FAQPage';
-import { ServicesPage } from '../site/services/ServicesPage';
-import { ContactPage } from '../site/contact/ContactPage';
+import { FAQPage } from '../site/pages/faq/FAQPage';
+import { ServicesPage } from '../site/pages/services/ServicesPage';
+import { ContactPage } from '../site/pages/contact/ContactPage';
 
 
 export const CaminhandymanPublicRoutes = () => {

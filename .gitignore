@@ -2,7 +2,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django,node,react,reactnative
 
 ### Archivos de configuración ###
+Backend/sensitive_data.json
 sensitive_data.json
+sensitive_data.*
 
 ### Django ###
 *.log
@@ -600,3 +602,4 @@ google-services.json
 *.hprof
 
 # End of https://www.toptal.com/developers/gitignore/api/python,django,node,react,reactnative
+Backend/sensitive_data.json
