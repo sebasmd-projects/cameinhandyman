@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}{% for t in title %}{{ t.title | safe }}{% endfor %}{% endblock title %}
+
+{% block body %}
+<body>
+    {% for con in content %}
+    {{ con.content | safe }}
+    {% endfor %}
+</body>
+{% endblock body %}

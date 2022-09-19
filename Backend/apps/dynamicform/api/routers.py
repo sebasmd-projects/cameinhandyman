@@ -13,43 +13,43 @@ from apps.dynamicform.api.api_views import (
 router = DefaultRouter()
 
 router.register(
-    r'form-size',
+    r'dynamicform/form-size',
     TVSizeViewSet,
     basename="form-size"
 )
 
 router.register(
-    r'form-surface',
+    r'dynamicform/form-surface',
     TVSurfaceViewSet,
     basename="form-surface"
 )
 
 router.register(
-    r'form-wall-mount',
+    r'dynamicform/form-wall-mount',
     TVWallMountViewSet,
     basename="form-wall-mount"
 )
 
 router.register(
-    r'form-handle-cords',
+    r'dynamicform/form-handle-cords',
     TVHandleCordsViewSet,
     basename="form-handle-cords"
 )
 
 router.register(
-    r'forms-other-installs',
+    r'dynamicform/forms-other-installs',
     TVOtherInstallsViewSet,
     basename="forms-other-installs"
 )
 
 router.register(
-    r'forms-questions',
+    r'dynamicform/forms-questions',
     TVQuestionsViewSet,
     basename="forms-questions"
 )
 
 router.register(
-    r'forms-dynamic-form',
+    r'dynamicform/forms-dynamic-form',
     TVWallMountInstallationViewSet,
     basename="forms-dynamic-form"
 )
