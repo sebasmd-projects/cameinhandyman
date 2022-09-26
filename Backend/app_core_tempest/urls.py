@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.backendApps.home.urls')),
     path('api-guide/', include('apps.backendApps.api_guide.urls')),
-    re_path('api/', include('apps.dynamicform.api.routers')),
+    re_path('api/dynamicform/', include('apps.frontendApps.dynamicform.api.routers')),
+    re_path('api/dashboard/', include('apps.frontendApps.dashboard.api.routers')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

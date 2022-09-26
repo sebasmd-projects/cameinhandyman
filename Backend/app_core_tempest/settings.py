@@ -96,9 +96,10 @@ THIRD_PARTY_APPS = (
 
 # Local Apps
 LOCAL_APPS = (
-    'apps.dynamicform',
+    'apps.frontendApps.dynamicform',
+    'apps.frontendApps.dashboard',
     'apps.backendApps.api_guide',
-    'apps.backendApps.home'
+    'apps.backendApps.home',
 )
 
 # Join all apps

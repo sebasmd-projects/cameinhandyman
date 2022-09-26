@@ -3,9 +3,9 @@
 {% block title %}{% for t in title %}{{ t.title | safe }}{% endfor %}{% endblock title %}
 
 {% block body %}
-<body>
+<div class="container">
     {% for con in content %}
-    {{ con.content | safe }}
+        {{ con.content | safe }}
     {% endfor %}
-</body>
+</div>
 {% endblock body %}

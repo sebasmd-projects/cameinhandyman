@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet
 
-from apps.dynamicform.models import (
+from apps.frontendApps.dynamicform.models import (
     TVSizeModel,
     TVSurfaceModel,
     TVWallMountModel,
@@ -10,7 +10,7 @@ from apps.dynamicform.models import (
     TVWallMountInstallationModel
 )
 
-from apps.dynamicform.api.serializers import (
+from apps.frontendApps.dynamicform.api.serializers import (
     TVSizeSerializer,
     TVSurfaceSerializer,
     TVWallMountSerializer,

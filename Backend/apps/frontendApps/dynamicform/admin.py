@@ -2,7 +2,7 @@ from import_export.admin import ImportExportActionModelAdmin
 from import_export import resources
 
 from django.contrib import admin
-from apps.dynamicform.models import (
+from apps.frontendApps.dynamicform.models import (
     TVSizeModel,
     TVSurfaceModel,
     TVWallMountModel,

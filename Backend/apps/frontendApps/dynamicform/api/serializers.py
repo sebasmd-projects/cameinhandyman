@@ -1,6 +1,6 @@
 from rest_framework import serializers, pagination
 
-from apps.dynamicform.models import (
+from apps.frontendApps.dynamicform.models import (
     TVSizeModel,
     TVSurfaceModel,
     TVWallMountModel,
