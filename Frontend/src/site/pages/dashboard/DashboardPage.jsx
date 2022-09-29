@@ -12,7 +12,7 @@ export const DashboardPage = ({ title }) => {
     <>
       <NavBar />
 
-      <div className='row d-flex align-items-center justify-content-between browser_background_img'>
+      <div className='row d-flex align-items-center justify-content-between browser_background_img cel_vh'>
         <BannerSection />
       </div>
 

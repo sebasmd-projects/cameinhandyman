@@ -1,12 +1,12 @@
-body{
+body {
     background-color: #414141;
 }
 
-.browser_background_img{
-    background-image: url("../imgs/svg3.svg"), url("../imgs/Vector 6.svg");
+
+.browser_background_img {
+    background-image: url("../imgs/Vector 7.svg");
     background-position: center;
-    background-repeat: no-repeat;
     height: 100vh;
-    width: auto;
+    width: 100vw;
     background-size: cover;
 }

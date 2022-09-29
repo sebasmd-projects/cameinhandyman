@@ -14,7 +14,7 @@ export const NavBar = () => {
         <span className='col-2 text-white'>Came in <br /> Handyman</span>
       </Navbar.Brand>
 
-      <Navbar.Toggle aria-controls='offcanvasNavbar-expand-lg' className='mx-3' />
+      <Navbar.Toggle aria-controls='offcanvasNavbar-expand-lg' className='mx-3 bg-white' />
 
       <Navbar.Offcanvas
         id='offcanvasNavbar-expand-lg'
