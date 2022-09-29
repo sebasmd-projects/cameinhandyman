@@ -1,0 +1,18 @@
+
+body{
+    background-color: #414141;
+}
+
+.section_about{
+
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/Slice\ 1.svg);
+}
+
+.section_services{
+
+    width: 100%;
+    height: 100vh;
+    background-color: grey;
+}
