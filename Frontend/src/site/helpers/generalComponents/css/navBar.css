@@ -1,0 +1,18 @@
+.navbarsito.active{
+    background-color: #FFF;
+
+}
+
+.navbarsito{
+    background-color: transparent;
+    
+}
+
+.navbarsito .fw-bolder-3,.fw-bolder-4{
+    color:aliceblue;
+}
+
+.navbarsito.active .fw-bolder-3, .navbarsito.active .fw-bolder-4{
+    color:black;
+    
+}
