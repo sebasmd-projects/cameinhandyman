@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container, Col, Row, Image, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
-import '../styles/banner.css'
-export const Banner = () => {
+import './style/css/banner.css'
+function AboutPage() {
   return (
     <>
 
@@ -37,3 +37,5 @@ export const Banner = () => {
     </>
   )
 }
+
+export default AboutPage

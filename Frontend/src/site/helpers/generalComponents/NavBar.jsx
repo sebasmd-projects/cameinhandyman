@@ -1,4 +1,4 @@
-import { Navbar, NavDropdown, Nav, Offcanvas } from 'react-bootstrap';
+import { Navbar, NavDropdown,Container, Nav, Offcanvas } from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import React,{useState, useEffect} from 'react';
 import './css/navBar.css'
@@ -17,46 +17,42 @@ export const NavBar = () => {
 
   window.addEventListener('scroll',changeBackground);
   return (
-    <Navbar fixed='top'expand="lg" className={navbarsito ? 'navbarsito active' : 'navbarsito'}>
+    <Navbar class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <Container>
+        <a class="navbar-brand" href="#">Web Zone</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <Navbar.Brand href="/" className='row align-items-center'>
-        <img
-          alt='Cameinhandyman Logo'
-          src='https://static.wixstatic.com/media/e1b08d_62533ab5c805474db01c37ffdcb1b4be~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20OnHandy.png'
-          className='col-6'
-        />
-        <span className='col-2'>Came in <br /> Handyman</span>
-      </Navbar.Brand>
-
-      <Navbar.Toggle aria-controls='offcanvasNavbar-expand-lg' className='mx-3' />
-
-      <Navbar.Offcanvas
-        id='offcanvasNavbar-expand-lg'
-        aria-labelledby='offcanvasNavbar-expand-lg'
-        placement="end"
-        className="text-bg-dark"
-      >
-        <Offcanvas.Header closeButton closeVariant='white'>
-          <Offcanvas.Title className='row align-items-center'>
-            <img
-              alt='Came in Handyman'
-              src='https://static.wixstatic.com/media/e1b08d_62533ab5c805474db01c37ffdcb1b4be~mv2.png/v1/fill/w_78,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20OnHandy.png'
-              className='col-5'
-            />
-            <span className='col-4'>
-              Came in Handyman
-            </span>
-          </Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          <Nav className="justify-content-evenly flex-grow-1 pe-3">
-            <Nav.Link className='fw-bolder-1' href="#about">About</Nav.Link>
-            <Nav.Link className='fw-bolder-2' href="#services">Services</Nav.Link>
-            <Nav.Link className='fw-bolder-3' href="#calendar">Calendar</Nav.Link>
-            <Nav.Link className='fw-bolder-4' href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Offcanvas.Body>
-      </Navbar.Offcanvas>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </Container>
     </Navbar>
   )
 }
