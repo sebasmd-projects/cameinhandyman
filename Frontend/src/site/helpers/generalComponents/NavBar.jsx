@@ -1,14 +1,13 @@
-import { Navbar, NavDropdown, Nav, Offcanvas } from 'react-bootstrap';
-import { HashLink as Link } from 'react-router-hash-link';
-import React,{useState, useEffect} from 'react';
+import { Navbar, Nav, Offcanvas } from 'react-bootstrap';
+import React from 'react';
 import './css/navBar.css'
 export const NavBar = () => {
 
-  const [navbarsito,setNavbar] = useState(false);
+  const [navbarsito,setNavbar] = React.useState(false);
   const specs = document.querySelector('#services')
   const changeBackground = ()=> {
     console.log(specs.getBoundingClientRect().top)
-    if(specs.getBoundingClientRect().top <=0){
+    if(specs.getBoundingClientRect().top <=50){
       setNavbar(true);
     }else{
       setNavbar(false)
@@ -18,7 +17,7 @@ export const NavBar = () => {
   window.addEventListener('scroll',changeBackground);
   return (
     <Navbar fixed='top'expand="lg" className={navbarsito ? 'navbarsito active' : 'navbarsito'}>
-
+      
       <Navbar.Brand href="/" className='row align-items-center'>
         <img
           alt='Cameinhandyman Logo'
