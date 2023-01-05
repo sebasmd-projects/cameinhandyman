@@ -1,18 +1,35 @@
 .navbarsito.active{
-    background-color: #FFF;
-
+    background-color: #414141;
+    -webkit-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
 }
 
 .navbarsito{
-    background-color: transparent;
-    
+    background-color: #0808082e;
+
+    -webkit-transition: background-color 0.5s linear;
+    -ms-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
 }
 
-.navbarsito .fw-bolder-3,.fw-bolder-4{
+.navbarsito .title-3,.title-4{
     color:aliceblue;
+    -webkit-transition: color 1s linear;
+    -ms-transition: color 1s linear;
+    transition: color 1s linear;
+}
+.navbarsito .title-2,.navbarsito  .title-1{
+    color:black;
+    -webkit-transition: color 1s linear;
+    -ms-transition: color 1s linear;
+    transition: color 1s linear;
 }
 
-.navbarsito.active .fw-bolder-3, .navbarsito.active .fw-bolder-4{
+.navbarsito.active .title-1, .navbarsito.active .title-2,  .navbarsito.active .title-3, .navbarsito.active .title-4{
     color:black;
+    -webkit-transition: color 1s linear;
+    -ms-transition: color 1s linear;
+    transition: color 1s linear;
     
 }

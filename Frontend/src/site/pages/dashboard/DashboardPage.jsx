@@ -1,8 +1,10 @@
 import React from 'react'
 import { NavBar } from '../../helpers/generalComponents/NavBar';
-import { Banner } from './components/Banner';
-import { Service } from './components/Service';
+import  AboutPage  from '../about/AboutPage';
+import { ServicesPage } from '../services/ServicesPage';
+
 import './dashboard.css'
+
 
 export const DashboardPage = ({ title }) => {
   document.title = title;
@@ -12,12 +14,12 @@ export const DashboardPage = ({ title }) => {
       <NavBar />
       <section id='about' className='section_about'>
 
-        <Banner />
+        <AboutPage />
 
       </section>
       <section id='services' className='section_services'>
 
-        <Service />
+        <ServicesPage />
 
       </section>
 
